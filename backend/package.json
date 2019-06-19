@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/traceyr/websiteBackend/issues"
   },
-  "homepage": "https://github.com/traceyr/websiteBackend#readme"
+  "homepage": "https://github.com/traceyr/websiteBackend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
 }
