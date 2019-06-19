@@ -2,6 +2,7 @@
 
 const express = require('express');
 const path = require('path');
+const port = process.env.PORT || 3001;
 
 let app = express();
 
@@ -12,6 +13,6 @@ app.use(express.static(path.join(__dirname, '../frontend')));
 // app.use('/', (req, res) => {
 //   res.render('index', { title: 'welcome'});
 // });
-app.listen(3001, () => {
-  console.log('Server is up on port 3001');
+app.listen(port, () => {
+  console.log(`Server is up on port ${port}`);
 });
