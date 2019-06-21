@@ -8,7 +8,22 @@ header {
 }
 
 section {
-  height: 100vh;
+  margin-top: 10vh;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 1.5vh;
+}
+
+h1 {
+  border-bottom-width: inherit;
+  border-bottom: 1px solid lightgrey;
+}
+
+h1.ui.header {
+  border-bottom-width: inherit;
+  border-bottom: 1px solid lightgrey
 }
 
 #my-intro {
@@ -23,4 +38,43 @@ section {
 #my-intro h2 {
   margin-bottom: 0;
   margin-top: 1vh;
+}
+
+#personal-pic {
+  padding-left: 0;
+}
+
+.travel-img img:hover {
+  webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+  filter: blur(4px);
+}
+
+.imgtext {
+  color: white;
+  width: 155px;
+  height: 135px;
+  padding: 50px 15px 0 15px;
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.travel-img:hover .imgtext {
+  -webkit-opacity: 1;
+  opacity: 1;
+}
+
+.travel-img {
+  margin-top: 7vh;
+}
+
+.ui.internally.celled.grid {
+  width: inherit;
+}
+
+.ui.teal.header {
+  font-size: 5vh;
 }
