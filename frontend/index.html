@@ -4,31 +4,37 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
     <link rel="stylesheet" href="./design.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100&display=swap" rel="stylesheet">
     <title>Welcome</title>
   </head>
   <body>
-    <header class="ui vertical masthead center aligned segment">
-      <div class="ui container">
-        <div class="ui secondary pointing menu">
-          <a class="active item header" href="/">Home</a>
-          <a class="item">About</a>
-          <a class="item">Work</a>
-          <a class="item" id="contact">Contact</a>
-          <div class="right item">
-            <a href="/" class="ui inverted" data-tooltip="Download Resume" data-position="bottom right" download><i class="large file pdf inverted icon"></i></a>
-            <a href="https://github.com/traceyr" class="ui inverted" target="_blank" data-tooltip="GitHub" data-position="bottom right"><i class="large github inverted icon"></i></a>
-            <a href="https://www.linkedin.com/in/tracey-radcliffe/" class="ui inverted" target="_blank" data-tooltip="LinkedIn" data-position="bottom right"><i class="large linkedin inverted icon"></i></a>
+    <header id="home">
+      <div class="ui vertical masthead center aligned segment">
+        <div class="ui container">
+          <i id="ham-menu" class="sidebar icon"></i>
+          <div id="nav" class="ui secondary pointing menu">
+            <a class="active item header" href="#home">Home</a>
+            <a class="item header" href="#about">About</a>
+            <a class="item header" href="#work">Work</a>
+            <!-- <a class="item header" href="#projects">Projects</a> -->
+            <a class="item header" href="#contact">Contact</a>
+            <div class="right item">
+              <a href="./img/ResumeJune2019.pdf" class="ui" data-tooltip="Download Resume" data-position="bottom right" download><i class="large file pdf red icon"></i></a>
+              <a href="https://github.com/traceyr" class="ui" target="_blank" data-tooltip="GitHub" data-position="bottom right"><i class="large github black icon"></i></a>
+              <a href="https://www.linkedin.com/in/tracey-radcliffe/" class="ui" target="_blank" data-tooltip="LinkedIn" data-position="bottom right"><i class="large linkedin black icon"></i></a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div id="my-intro" class="ui text container left aligned">
+      <div id="my-intro" class="ui header text container left aligned">
         <h1>Welcome. </h1>
         <h2>My Name Is Tracey Radcliffe</h2>
         <h2>Full Stack Web Developer Based In Seattle, WA</h2>
       </div>
     </header>
-    <section>
+    <section id="about">
       <div class="ui vertical stripe segment container">
         <h1 class="ui container header teal">About Me</h1>
         <div class="ui internally celled grid">
@@ -38,7 +44,7 @@
             </div>
             <div class="ten wide column">
               <h2>Name</h2><p>Tracey Radcliffe</p>
-              <h2>Bio</h2><p>Tracey Radcliffe is a full stack web developer who lives in Seattle, WA. She grew up in the Washington area, in a town no one has ever heard of called Allyn. In college, she found a passion for health and nutrition, so decided to major in it. While completing her practicum for Dietetics, she realized hospital work wasn't for her. It makes her a little panicky. So she took a job at a nutrition software company, where she was exposed to building and guiding the development of websites. So she started fiddling around with code, teaching herself, where she fell in love with the problem solving and challenges coding brings.  </p>
+              <h2>Bio</h2><p>I am a full stack web developer who lives in Seattle, WA. I grew up in the Washington area, in a town no one has ever heard of called Allyn. In college, I found a passion for health and nutrition, so decided to major in it. While completing my practicum for Dietetics, I realized hospital work wasn't for me. They make me a little panicky. So I took a job at a nutrition software company, where I was exposed to building and guiding the development of websites. So I started fiddling around with code, teaching myself, where I fell in love with the problem solving and challenges coding brings.  </p>
               <h2>Hobbies</h2><p>Reading, Travel, Cats, Coffee, Gym, Hiking, Photos</p>
             </div>
           </div>
@@ -73,7 +79,7 @@
           <div class="two column row">
             <div class="column travel-img">
               <div class="ui segment">
-                <img class="ui medium image" src="./img/MVIMG_20180511_210159.jpg">
+                <img class="ui image" src="./img/MVIMG_20180511_210159.jpg">
                 <span class="imgtext">
                   <p>Seattle, USA</p>
                 </span>
@@ -81,7 +87,7 @@
             </div>
             <div class="column travel-img">
               <div class="ui segment">
-                <img class="ui medium image" src="./img/MVIMG_20190312_142830.jpg">
+                <img class="ui image" src="./img/MVIMG_20190312_142830.jpg">
                 <span class="imgtext">
                   <p>Mexico City, MX</p>
                 </span>
@@ -91,7 +97,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="work">
       <div class="ui vertical stripe segment container">
         <h1 class="ui container header teal">Work</h1>
         <div class="ui internally celled grid">
@@ -143,39 +149,75 @@
         </div>
       </div>
     </section>
-    <section>
+    <!-- <section id="projects">
+      <div class="ui vertical stripe segment container">
+        <h1 class="ui container header teal">Projects</h1>
+        <div class="ui three column grid">
+          <div class="column">
+            <div class="ui fluid card">
+
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui fluid card">
+
+            </div>
+          </div
+          <div class="column">
+            <div class="ui fluid card">
+
+            </div>
+          </div
+        </div>
+      </div>
+    </section> -->
+    <section id="contact">
       <div class="ui vertical stripe segment container">
         <h1 class="ui container header teal">Contact Me</h1>
-        <h4 class="header">*NOT WORKING AT THE MOMENT*</h4>
-        <div class="ui form segment">
-          <div class="two required fields">
+        <article>
+          <p>Say Hello.</p>
+          <p>Drop me a line.</p>
+          <p>Let me know what I can do for you.</p>
+        </article>
+        <form class="ui form segment" action="https://formspree.io/radcliffe.tracey@gmail.com" method="POST">
+          <div class="two fields">
             <div class="field">
               <label for="">First Name</label>
-              <input type="text" name="" value="" placeholder="First Name">
+              <input type="text" name="firstName" value="" placeholder="First Name">
             </div>
             <div class="field">
               <label for="">Last Name</label>
-              <input type="text" name="" value="" placeholder="Last Name">
+              <input type="text" name="lastName" value="" placeholder="Last Name">
             </div>
           </div>
           <div class="two fields">
             <div class="field">
               <label for="">Phone</label>
-              <input type="text" name="" value="" placeholder="Phone Number">
+              <input type="text" name="phone" value="" placeholder="Phone Number">
             </div>
             <div class="field">
               <label for="">Email</label>
-              <input type="text" name="" value="" placeholder="Email">
+              <input type="text" name="email" value="" placeholder="Email">
             </div>
           </div>
           <div class="field">
             <label>Message</label>
-            <textarea placeholder="Your message here"></textarea>
+            <textarea placeholder="Your message here" name="message"></textarea>
           </div>
-          <div class="ui submit teal button">Submit</div>
-        </div>
+          <button class="ui submit teal button" id="contactSubmit" value="Send">Submit</button>
+        </form>
       </div>
     </section>
+    <footer>
+      <div class="ui vertical masthead center aligned segment">
+        <div class="ui container">
+          <h2>Tracey Radcliffe</h2>
+          <a href="./img/ResumeJune2019.pdf" class="ui" data-tooltip="Download Resume" data-position="top right" download><i class="large file pdf red icon"></i></a>
+          <a href="https://github.com/traceyr" class="ui" target="_blank" data-tooltip="GitHub" data-position="top right"><i class="large github black icon"></i></a>
+          <a href="https://www.linkedin.com/in/tracey-radcliffe/" class="ui" target="_blank" data-tooltip="LinkedIn" data-position="top right"><i class="large linkedin black icon"></i></a>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

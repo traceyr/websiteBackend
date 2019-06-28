@@ -1,14 +1,25 @@
-.masthead {
-  background-color: teal !important;
-  font-family: Consolas;
-}
-
 header {
-  height: 80vh;
+  height: 85vh;
+  background-color: teal;
 }
 
+footer {
+  height: 10vh;
+  background-color: teal
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+   font-family: 'Raleway', sans-serif;
+ }
 section {
-  margin-top: 10vh;
+  margin-top: 5vh;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 5vh;
 }
 
 li {
@@ -21,9 +32,15 @@ h1 {
   border-bottom: 1px solid lightgrey;
 }
 
-h1.ui.header {
+article p {
+  font-size: 3vh;
+  margin-bottom: 0;
+}
+
+h1.ui.teal.header {
   border-bottom-width: inherit;
-  border-bottom: 1px solid lightgrey
+  border-bottom: 1px solid lightgrey;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #my-intro {
@@ -77,4 +94,32 @@ h1.ui.header {
 
 .ui.teal.header {
   font-size: 5vh;
+}
+.ui.vertical.segment {
+  border-bottom: none;
+}
+
+#ham-menu {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .ui.fixed.menu {
+    display: none !important;
+  }
+
+  #ham-menu {
+    display: block;
+  }
+
+  #nav {
+    display: none;
+  }
+  #nav.show-header {
+    display: block;
+  }
+
+  #my-intro {
+    margin-top: 5vh;
+  }
 }
