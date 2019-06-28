@@ -1,14 +1,18 @@
-.masthead {
-  background-color: teal !important;
-  font-family: Consolas;
-}
-
 header {
   height: 80vh;
+  background-color: teal;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+   font-family: 'Raleway', sans-serif;
+ }
 section {
   margin-top: 10vh;
+  font-family: 'Raleway', sans-serif;
 }
 
 li {
@@ -21,9 +25,15 @@ h1 {
   border-bottom: 1px solid lightgrey;
 }
 
-h1.ui.header {
+article p {
+  font-size: 3vh;
+  margin-bottom: 0;
+}
+
+h1.ui.teal.header {
   border-bottom-width: inherit;
-  border-bottom: 1px solid lightgrey
+  border-bottom: 1px solid lightgrey;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #my-intro {
@@ -78,3 +88,22 @@ h1.ui.header {
 .ui.teal.header {
   font-size: 5vh;
 }
+
+/* header.fixed {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity:0;
+  visibility:hidden;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  transform:translate(0, -200px);
+}
+
+header.in-view{
+  opacity:1;
+  visibility:visible;
+  transition: all 0.3s ease;
+  transform:translate(0, 0);
+} */
