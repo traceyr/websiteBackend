@@ -99,8 +99,27 @@ h1.ui.teal.header {
   border-bottom: none;
 }
 
-.fixed {
-    position: fixed;
-    top:0; left:0;
-    width: 100%;
+#ham-menu {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .ui.fixed.menu {
+    display: none !important;
+  }
+
+  #ham-menu {
+    display: block;
+  }
+
+  #nav {
+    display: none;
+  }
+  #nav.show-header {
+    display: block;
+  }
+
+  #my-intro {
+    margin-top: 5vh;
+  }
 }
