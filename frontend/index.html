@@ -157,39 +157,38 @@
     <section id="contact">
       <div class="ui vertical stripe segment container">
         <h1 class="ui container header teal">Contact Me</h1>
-        <h4 class="header">*NOT WORKING AT THE MOMENT*</h4>
         <article>
           <p>Say Hello.</p>
           <p>Drop me a line.</p>
           <p>Let me know what I can do for you.</p>
         </article>
-        <div class="ui form segment">
-          <div class="two required fields">
+        <form class="ui form segment" action="https://formspree.io/radcliffe.tracey@gmail.com" method="POST">
+          <div class="two fields">
             <div class="field">
               <label for="">First Name</label>
-              <input type="text" name="" value="" placeholder="First Name">
+              <input type="text" name="firstName" value="" placeholder="First Name">
             </div>
             <div class="field">
               <label for="">Last Name</label>
-              <input type="text" name="" value="" placeholder="Last Name">
+              <input type="text" name="lastName" value="" placeholder="Last Name">
             </div>
           </div>
           <div class="two fields">
             <div class="field">
               <label for="">Phone</label>
-              <input type="text" name="" value="" placeholder="Phone Number">
+              <input type="text" name="phone" value="" placeholder="Phone Number">
             </div>
             <div class="field">
               <label for="">Email</label>
-              <input type="text" name="" value="" placeholder="Email">
+              <input type="text" name="email" value="" placeholder="Email">
             </div>
           </div>
-          <div class="required field">
+          <div class="field">
             <label>Message</label>
-            <textarea placeholder="Your message here"></textarea>
+            <textarea placeholder="Your message here" name="message"></textarea>
           </div>
-          <div class="ui submit teal button" id="contactSubmit">Submit</div>
-        </div>
+          <button class="ui submit teal button" id="contactSubmit" value="Send">Submit</button>
+        </form>
       </div>
     </section>
     <footer>
