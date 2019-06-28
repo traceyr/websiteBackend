@@ -1,9 +1,18 @@
+'use strict';
 $(function() {
-  $('#nav a').on('click', function(e) {
-    e.preventDefault();
+  $('#nav a').on('click', function() {
     $('#nav a.active').removeClass('active');
     $(this).addClass('active');
-    console.log('did it work');
+  });
+
+  $(window).scroll(function(){
+    let myIntroHeight = $('#my-intro').height();
+    if ($(window).scrollTop() >= myIntroHeight) {
+      $('#nav').addClass('fixed');
+    }
+    else {
+      $('#nav').removeClass('fixed');
+    }
   });
 
 });

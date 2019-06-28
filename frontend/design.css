@@ -1,6 +1,12 @@
 header {
-  height: 80vh;
+  height: 85vh;
   background-color: teal;
+}
+
+footer {
+  height: 10vh;
+  background-color: teal
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,8 +17,9 @@ a {
    font-family: 'Raleway', sans-serif;
  }
 section {
-  margin-top: 10vh;
+  margin-top: 5vh;
   font-family: 'Raleway', sans-serif;
+  padding-top: 5vh;
 }
 
 li {
@@ -88,22 +95,12 @@ h1.ui.teal.header {
 .ui.teal.header {
   font-size: 5vh;
 }
-
-/* header.fixed {
-  background: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity:0;
-  visibility:hidden;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
-  transform:translate(0, -200px);
+.ui.vertical.segment {
+  border-bottom: none;
 }
 
-header.in-view{
-  opacity:1;
-  visibility:visible;
-  transition: all 0.3s ease;
-  transform:translate(0, 0);
-} */
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%;
+}
