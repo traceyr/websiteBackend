@@ -103,7 +103,7 @@ h1.ui.teal.header {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .ui.fixed.menu {
     display: none !important;
   }
@@ -115,6 +115,7 @@ h1.ui.teal.header {
   #nav {
     display: none;
   }
+
   #nav.show-header {
     display: block;
   }

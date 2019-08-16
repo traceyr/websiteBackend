@@ -16,7 +16,6 @@ $(function() {
   });
 
   $('#ham-menu').on('click', function() {
-    console.log('click');
     let menu = $('#nav');
     menu.toggleClass('show-header');
   });
